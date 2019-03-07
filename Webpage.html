@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <title>Sign In/Out</title>
+  <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<main class="container-fluid">
+    <h1>Check in sheet - Mable Cook</h1>
+
+  <p>Input 919 number
+    <input id="stuNum" type="text" value="">
+  </p>
+
+  <p>Input time in
+    <input id="timeIn" type="text" value="">
+  </p>
+
+  <p>Input time out
+    <input id="timeOut" type="text" value="">
+  </p>
+  <p>Input reason for ending tour
+    <input id="erason" type="text" value="">
+  </p>
+
+  <button id="btnAdd" class="btn btn-primary">Add to table</button>
+
+</main>
+
+<body>
+    <p>
+        
+
+    </p>
+
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">919 Number</th>
+            <th scope="col">Start location</th>
+            <th scope="col">Time in</th>
+            <th scope="col">Time out</th>
+            <th scope="col">Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>919448484</td>
+            <td>Colden Hall</td>
+            <td>8:45 a.m.</td>
+            <td>10:00 a.m.</td>
+            <td>Completed tour</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>919948372</td>
+            <td>Valk</td>
+            <td>10:45 a.m.</td>
+            <td>12:00 a.m.</td>
+            <td>Completed tour</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>919098263</td>
+            <td>Garrett Strong</td>
+            <td>9:00</td>
+            <td>11:00 a.m.</td>
+            <td>Completed tour</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button id="btnExcel" class="btn btn-primary">Generate spreadsheet</button>
+   
+</body>
+
+</html>
