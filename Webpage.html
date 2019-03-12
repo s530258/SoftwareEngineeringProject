@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang='en'>
 
@@ -5,6 +6,9 @@
   <title>Sign In/Out</title>
   <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="public/app.js"></script>
 </head>
 
 <main class="container-fluid">
@@ -91,12 +95,15 @@
       var cell3 = row.insertCell(3);
       var cell4 = row.insertCell(4);
       var cell5 = row.insertCell(5);
-      id.innerHTML = "1";
+      id.innerHTML = 0;
       cell1.innerHTML = a;
       cell2.innerHTML = b;
       cell3.innerHTML = c;
       cell4.innerHTML = d;
       cell5.innerHTML = e;
+      for (let index =1; index <= table.rows.length-1; index++) {
+        table.rows[index].cells[0].innerHTML = "<strong>"+ parseInt(table.rows.length-index)+"</strong>";
+      }
     }
 
     document.getElementById('btnExcel').addEventListener('click', function () {
